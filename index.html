@@ -1,0 +1,1479 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Ray Nunes</title>
+    <meta
+      name="description"
+      content="Portfólio de Rayane Nunes, Product Designer e UX Researcher em Lisboa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@400;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      // hide content until animations.js sets the initial states; give up after 3s if Motion is slow
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("motion-pending");
+        setTimeout(function () { document.documentElement.classList.remove("motion-pending"); }, 3000);
+      }
+    </script>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-arrow" viewBox="0 0 16 16">
+        <path
+          d="M3 8h10M9 4l4 4-4 4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="square"
+        />
+      </symbol>
+      <symbol id="i-back" viewBox="0 0 16 16">
+        <path
+          d="M13 8H3M7 4L3 8l4 4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="square"
+        />
+      </symbol>
+      <symbol id="i-chev" viewBox="0 0 16 16">
+        <path
+          d="M6 3l5 5-5 5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="square"
+        />
+      </symbol>
+      <symbol id="i-out" viewBox="0 0 16 16">
+        <path
+          d="M5 11l6-6M6 4.5h5.5V10"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="square"
+        />
+      </symbol>
+      <symbol id="i-pesquisa" viewBox="0 0 20 20">
+        <g fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="8.5" cy="8.5" r="5.5" />
+          <path d="M12.5 12.5l5 5" />
+        </g>
+      </symbol>
+      <symbol id="i-sintetizacao" viewBox="0 0 20 20">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linejoin="round"
+        >
+          <path d="M10 3l7 3.5-7 3.5-7-3.5z" />
+          <path d="M3 10.5l7 3.5 7-3.5M3 14l7 3.5 7-3.5" />
+        </g>
+      </symbol>
+      <symbol id="i-prototipo" viewBox="0 0 20 20">
+        <g fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2.5" y="3.5" width="15" height="13" rx="1.5" />
+          <path d="M2.5 7.5h15M7 7.5v9" />
+        </g>
+      </symbol>
+      <symbol id="i-sessoes" viewBox="0 0 20 20">
+        <g fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="7" cy="7" r="3" />
+          <circle cx="14" cy="8" r="2.4" />
+          <path
+            d="M1.8 17c.6-3 2.7-4.6 5.2-4.6s4.6 1.6 5.2 4.6M12.4 12.6c2.6-.4 4.9 1 5.6 4.4"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <nav class="rail" aria-label="Principal">
+      <a class="brand" href="#sobre" data-link>
+        <span class="brand-block" aria-hidden="true"></span>
+        <span class="brand-name"
+          >Ray Nunes<br /><span class="muted">Product Designer</span></span
+        >
+      </a>
+      <div class="nav" id="nav">
+        <a href="#sobre" data-nav="sobre"
+          >Sobre<svg><use href="#i-chev" /></svg
+        ></a>
+        <a href="#trabalho" data-nav="trabalho"
+          >Trabalho<svg><use href="#i-chev" /></svg
+        ></a>
+        <a href="#processo" data-nav="processo"
+          >Processo<svg><use href="#i-chev" /></svg
+        ></a>
+        <a href="#experiencias" data-nav="experiencias"
+          >Experiências<svg><use href="#i-chev" /></svg
+        ></a>
+        <a href="#curriculo" data-nav="curriculo"
+          >Currículo<svg><use href="#i-chev" /></svg
+        ></a>
+      </div>
+      <div class="start">
+        <p class="label"><span class="dot"></span>Comece aqui</p>
+        <a class="btn btn-ghost btn-block" href="#trabalho"
+          >Ver os cases<svg><use href="#i-arrow" /></svg
+        ></a>
+        <a
+          class="btn btn-ghost btn-block"
+          href="https://www.linkedin.com/in/rayane-nunes"
+          target="_blank"
+          rel="noopener"
+          >Vamos conversar<svg><use href="#i-out" /></svg
+        ></a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <!-- ============ HOME ============ -->
+      <main class="page" data-page="home">
+        <section id="sobre" class="hero" aria-labelledby="h-sobre">
+          <p class="label">Sobre</p>
+          <div class="lockup">
+            <div
+              class="photo"
+              role="img"
+              aria-label="Foto de Ray Nunes (a adicionar)"
+            >
+              <span>RN</span>
+            </div>
+            <div>
+              <h1 id="h-sobre" class="display">Ray Nunes</h1>
+            </div>
+          </div>
+          <div class="hero-grid">
+            <p class="statement">
+              Acredito e trabalho com decisões apoiadas em
+              <strong>dados reais</strong>, num ambiente onde a pesquisa tem
+              lugar à mesa.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#trabalho"
+                >Ver os meus cases<svg><use href="#i-arrow" /></svg
+              ></a>
+              <a
+                class="btn btn-ghost"
+                href="https://www.canva.com/design/DAHMYOA1g9U/Rfhi6KE78-T237Yl4vGctw/edit"
+                target="_blank"
+                rel="noopener"
+                >Aceder CV<svg><use href="#i-out" /></svg
+              ></a>
+            </div>
+            <ul class="contacts">
+              <li class="num">910 561 682</li>
+              <li>
+                <a href="mailto:rayanenlima@gmail.com">rayanenlima@gmail.com</a>
+              </li>
+              <li>Lisboa, Portugal</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rayane-nunes"
+                  target="_blank"
+                  rel="noopener"
+                  >linkedin.com/in/rayane-nunes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          id="trabalho"
+          class="block"
+          aria-labelledby="h-trab"
+          style="gap: 32px"
+        >
+          <div class="sh">
+            <div class="stack">
+              <p class="label">Trabalho</p>
+              <h2 id="h-trab" class="subheading">O que queres ver primeiro?</h2>
+            </div>
+          </div>
+          <div class="cards2">
+            <article class="case-card">
+              <div class="tags">
+                <span class="tag">Mapeamento de jornada</span
+                ><span class="tag">Testes de usabilidade</span>
+              </div>
+              <img
+                class="case-img"
+                src="images/vinculos-tablet.png"
+                width="1500"
+                height="1125"
+                alt="Ecrã de consulta do vínculo do trabalhador na Segurança Social Direta, num tablet"
+              />
+              <p class="label">Case de trabalho</p>
+              <h3>
+                Autonomia para acompanhar<br />os pedidos sobre<br />os seus
+                trabalhadores
+              </h3>
+              <p class="desc">Gestão de vínculos · Segurança Social Direta</p>
+              <a class="btn btn-primary" href="#vinculos"
+                >Consultar case<svg><use href="#i-arrow" /></svg
+              ></a>
+            </article>
+            <article class="case-card">
+              <div class="tags">
+                <span class="tag">Workshop</span
+                ><span class="tag">MoSCoW Priorization</span>
+              </div>
+              <img
+                class="case-img"
+                src="images/ciclo-desktop.png"
+                width="1500"
+                height="1125"
+                alt="Painel das obrigações contributivas da Segurança Social Direta, num ecrã de computador"
+              />
+              <p class="label">Case de trabalho</p>
+              <h3>
+                Como o cálculo das contribuições deixou de ser trabalho manual
+                todos os meses
+              </h3>
+              <p class="desc">
+                Simplificação do Ciclo Contributivo · Segurança Social Direta
+              </p>
+              <a class="btn btn-primary" href="#ciclo"
+                >Consultar case<svg><use href="#i-arrow" /></svg
+              ></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta" aria-labelledby="h-cta1">
+          <h2 id="h-cta1" class="subheading">
+            Queres ouvir estes projetos em detalhe?
+          </h2>
+          <div class="right">
+            <p>
+              Numa conversa consigo mostrar-te as decisões que não caberiam num
+              case: o que testámos, o que falhou e o que mudou depois.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://www.linkedin.com/in/rayane-nunes"
+              target="_blank"
+              rel="noopener"
+              >Vamos conversar<svg><use href="#i-arrow" /></svg
+            ></a>
+          </div>
+        </section>
+
+        <section id="processo" class="block" aria-labelledby="h-proc">
+          <div class="proc-head">
+            <div
+              class="stack"
+              style="display: flex; flex-direction: column; gap: 16px"
+            >
+              <p class="label">Processo</p>
+              <h2 id="h-proc" class="heading">Como eu trabalho</h2>
+            </div>
+            <svg
+              class="drag-hint"
+              viewBox="0 0 112 112"
+              role="img"
+              aria-label="Arraste para o lado"
+            >
+              <defs>
+                <path
+                  id="arc"
+                  d="M56 56 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"
+                />
+              </defs>
+              <circle
+                cx="56"
+                cy="56"
+                r="30"
+                fill="none"
+                stroke="var(--line)"
+                stroke-width="1"
+              />
+              <path
+                d="M44 56h24M61 49l7 7-7 7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+              <text>
+                <textPath href="#arc">
+                  Arraste para o lado · Arraste para o lado ·
+                </textPath>
+              </text>
+            </svg>
+          </div>
+          <div
+            class="track"
+            id="track"
+            tabindex="0"
+            aria-label="Etapas do processo, deslizar na horizontal"
+          >
+            <article class="step">
+              <span class="n">1</span>
+              <h3>Definição</h3>
+              <p>
+                Juntos pensamos e definimos os objetivos do produto e como será
+                a jornada do design relacionada com a entrega estabelecida.
+              </p>
+            </article>
+            <article class="step">
+              <span class="n">2</span>
+              <h3>Investigação</h3>
+              <p>
+                Momento da pesquisa e da análise de dados, onde passam a existir
+                hipóteses, pontos de dor e oportunidades sobre o processo.
+              </p>
+            </article>
+            <article class="step">
+              <span class="n">3</span>
+              <h3>Sintetização</h3>
+              <p>
+                Organizo o que foi recolhido em jornadas, mapas e relatórios,
+                para transformar dados dispersos em decisões de design.
+              </p>
+            </article>
+            <article class="step">
+              <span class="n">4</span>
+              <h3>Ideação</h3>
+              <p>
+                Momento de co-criação, onde trabalhamos estrategicamente a
+                experimentação de conceitos que estejam alinhados com os
+                objetivos do produto.
+              </p>
+            </article>
+            <article class="step">
+              <span class="n">5</span>
+              <h3>Validação</h3>
+              <p>
+                Protótipos de média e alta fidelidade testados com utilizadores
+                reais, com iteração contínua até a solução ficar clara.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="experiencias" class="exp" aria-labelledby="h-exp">
+          <div class="proc-head">
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <p class="label">Experiências</p>
+              <h2 id="h-exp" class="heading">Minha experiência</h2>
+            </div>
+            <a
+              class="btn btn-ghost"
+              href="https://www.canva.com/design/DAHMYOA1g9U/Rfhi6KE78-T237Yl4vGctw/edit"
+              target="_blank"
+              rel="noopener"
+              >Aceder CV<svg><use href="#i-out" /></svg
+            ></a>
+          </div>
+          <div class="timeline">
+            <div class="tl-row">
+              <span class="when num">2026 – atualmente</span>
+              <div>
+                <p class="role">UX Researcher</p>
+                <p class="org">Eviden · Instituto de Informática, I.P.</p>
+              </div>
+            </div>
+            <div class="tl-row">
+              <span class="when num">2023 – 2026</span>
+              <div>
+                <p class="role">UI/UX Designer</p>
+                <p class="org">Eviden · Instituto de Informática, I.P.</p>
+              </div>
+            </div>
+            <div class="tl-row">
+              <span class="when num">2021 – 2023</span>
+              <div>
+                <p class="role">Product Designer</p>
+                <p class="org">Boavista Tecnologia</p>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <p class="label">Competências</p>
+            <div class="skills">
+              <span>Pesquisa</span>
+              <div class="tags">
+                <span class="tag">Double Diamond</span
+                ><span class="tag">Lean Inception</span
+                ><span class="tag">MoSCoW Priorization</span
+                ><span class="tag">Jornada do utilizador</span>
+              </div>
+              <span>Design</span>
+              <div class="tags">
+                <span class="tag">Wireframes</span
+                ><span class="tag">Protótipos</span>
+              </div>
+              <span>Ferramentas</span>
+              <div class="tags">
+                <span class="tag">Figma</span><span class="tag">FigJam</span
+                ><span class="tag">Miro</span><span class="tag">Hotjar</span
+                ><span class="tag">Notion</span>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <p class="label">Formação</p>
+            <div class="edu">
+              <article class="edu-card">
+                <h4>MBA em UX Design e User Research</h4>
+                <p class="small muted num">UNIFATEC · 2023 – 2024</p>
+                <a
+                  class="btn btn-ghost"
+                  href="https://www.linkedin.com/in/rayane-nunes/overlay/Education/1044061776/treasury/?profileId=ACoAABbXYOcBKIok-MvJpVwYM6HiXqUFUcLqAwM"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver certificado<svg><use href="#i-arrow" /></svg
+                ></a>
+              </article>
+              <article class="edu-card">
+                <h4>Certificação em UI/UX Designer</h4>
+                <p class="small muted num">EBAC · 2021</p>
+                <a
+                  class="btn btn-ghost"
+                  href="https://www.linkedin.com/in/rayane-nunes/overlay/Education/753639635/treasury/?profileId=ACoAABbXYOcBKIok-MvJpVwYM6HiXqUFUcLqAwM"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver certificado<svg><use href="#i-arrow" /></svg
+                ></a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" aria-labelledby="h-bio" style="gap: 32px">
+          <div
+            class="stack"
+            style="display: flex; flex-direction: column; gap: 16px"
+          >
+            <p class="label">Ainda por aqui?</p>
+            <h2 id="h-bio" class="subheading">
+              Então deixa-me contar-te o resto
+            </h2>
+          </div>
+          <div class="bio">
+            <div class="text">
+              <p>
+                Sou originária do Ceará, no Brasil, e a minha formação inicial é
+                em Publicidade e Propaganda. Comecei a carreira em marketing
+                digital, a analisar dados de leads e a construir fluxos de
+                automação — foi aí que aprendi a olhar para comportamento antes
+                de olhar para ecrãs.
+              </p>
+              <p>
+                Foi ao trabalhar com produtos digitais na Boavista Tecnologia
+                que descobri o entusiasmo pelo design centrado nas pessoas:
+                conduzi Double Diamond e Lean Inception de ponta a ponta, testei
+                protótipos com utilizadores reais e fui guardiã do design system
+                da equipa.
+              </p>
+              <p>
+                Hoje, em Lisboa, faço pesquisa e design na Segurança Social
+                Direta. Trabalhar em serviço público ensinou-me a desenhar para
+                quem não tem alternativa ao produto — e é isso que procuro
+                continuar a fazer: decisões apoiadas em dados reais, num
+                ambiente onde a pesquisa tem lugar à mesa.
+              </p>
+            </div>
+            <figure>
+              <svg
+                class="map"
+                id="map"
+                viewBox="0 0 864 336"
+                role="img"
+                aria-label="Mapa-múndi com Fortaleza, no Brasil, e Lisboa, em Portugal, marcados"
+              ></svg>
+              <div class="map-legend label">
+                <span
+                  ><i style="background: var(--data-green)"></i>Fortaleza,
+                  Ceará</span
+                ><span
+                  ><i style="background: var(--accent)"></i>Lisboa, hoje</span
+                >
+              </div>
+            </figure>
+          </div>
+        </section>
+
+        <section class="cta" aria-labelledby="h-cta2">
+          <h2 id="h-cta2" class="subheading">Chegaste ao fim. Vamos falar?</h2>
+          <div class="right">
+            <p>
+              Estou disponível para projetos de product design e user research.
+              Escreve-me e conto-te como trabalho.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://www.linkedin.com/in/rayane-nunes"
+              target="_blank"
+              rel="noopener"
+              >Vamos conversar<svg><use href="#i-arrow" /></svg
+            ></a>
+          </div>
+        </section>
+      </main>
+
+      <!-- ============ CASE: VÍNCULOS ============ -->
+      <main class="page" data-page="vinculos" hidden>
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#trabalho"
+            ><svg><use href="#i-back" /></svg>Voltar</a
+          >
+          <a class="btn btn-ghost" href="#ciclo"
+            >Próximo case<svg><use href="#i-arrow" /></svg
+          ></a>
+        </div>
+
+        <section class="case-top" aria-labelledby="h-vin">
+          <div class="case-head">
+            <div class="intro">
+              <div class="orgs">
+                <span class="label">Segurança Social Direta</span
+                ><span class="label">Instituto de Informática</span>
+              </div>
+              <h1 id="h-vin" class="heading">
+                Pedidos sobre vínculos dos trabalhadores por conta de outrem
+              </h1>
+            </div>
+            <img
+              class="case-img"
+              src="images/vinculos-tablet.png"
+              width="1500"
+              height="1125"
+              alt="Ecrã de consulta do vínculo do trabalhador na Segurança Social Direta, num tablet"
+            />
+          </div>
+          <p class="ctx">
+            A segurança social é um sistema criado pelo governo para proteger os
+            cidadãos em situações como doença, desemprego, velhice ou
+            maternidade, garantindo apoio financeiro e acesso a serviços
+            essenciais. Para além disso, é por esta plataforma que entidade
+            empregadoras consegue se regularizar perante suas obrigações.
+          </p>
+        </section>
+
+        <section class="block" aria-labelledby="h-vin-des">
+          <p class="label" id="h-vin-des">Desafios</p>
+          <ul class="challenges">
+            <li>
+              <span class="i num">01</span
+              ><span
+                ><b>Adaptação</b> da funcionalidade e rotina de trabalho com a
+                chegada da
+                <b
+                  >Simplificação do Ciclo Contributivo no dia a dia das
+                  empresas</b
+                ></span
+              >
+            </li>
+            <li>
+              <span class="i num">02</span
+              ><span
+                >Oferecer mais <b>autonomia</b> na gestão e pedidos sobre os
+                vínculos</span
+              >
+            </li>
+            <li>
+              <span class="i num">03</span
+              ><span
+                ><b>Desburocratizar e dar maior contexto</b> para o utilizador
+                externo e interno</span
+              >
+            </li>
+            <li>
+              <span class="i num">04</span
+              ><span
+                ><b>Automatizar e diminuir o tempo de tratamento</b> dos pedidos
+                de alterações nos vínculos.</span
+              >
+            </li>
+            <li>
+              <span class="i num">05</span
+              ><span
+                ><b>Evitar erros</b> nas informações dos trabalhadores</span
+              >
+            </li>
+            <li>
+              <span class="i num">06</span
+              ><span
+                >Garantir <b>maior assertividade nas informações</b> dos
+                vínculos dos TCOs para a passagem a funcionalidade do apuramento
+                das obrigações contributivas das empresas</span
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="block" aria-labelledby="h-vin-res">
+          <p class="label" id="h-vin-res">Resultados</p>
+          <div class="results">
+            <div class="metric">
+              <span class="big num">+60K</span
+              ><span class="what">pedidos resolvidos</span>
+              <p>
+                Entidades empregadoras se apropriando da autonomia em solicitar
+                alterações no vínculos de trabalhadores, sem ter a necessidade
+                de abrir tickets.
+              </p>
+            </div>
+            <div class="metric">
+              <span class="big num">55%</span
+              ><span class="what">mais rápido</span>
+              <p>
+                Após análise de dados internos feito pós produção da
+                funcionalidade, foi identificado uma queda na média de tempo que
+                os pedidos levavam para serem tratados na Segurança Social.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" aria-labelledby="h-vin-proc" style="gap: 48px">
+          <div class="sh full">
+            <div class="stack">
+              <p class="label">Racional do processo</p>
+              <h2 id="h-vin-proc" class="subheading">
+                Quatro etapas, do alinhamento à validação
+              </h2>
+            </div>
+          </div>
+          <div class="stages">
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-sessoes" /></svg
+                  ></span>
+                  <p class="label">Etapa 1</p>
+                  <h3>Alinhamentos de priorização de requisitos</h3>
+                </div>
+                <dl class="facts">
+                  <dt>Executado</dt>
+                  <dd>
+                    Foram feitas sessões de alinhamento e priorização de
+                    requisitos com a área do projeto (Instituto de Informática)
+                    e o negócio (Segurança Social).
+                  </dd>
+                  <dt>Entregáveis</dt>
+                  <dd>
+                    Mapeamento das necessidades do utilizador e do negócio.
+                  </dd>
+                </dl>
+              </div>
+              <div class="two">
+                <figure>
+                  <img
+                    class="case-img"
+                    src="images/vinculos-jornada.png"
+                    width="550"
+                    height="605"
+                    style="max-width: 500px"
+                    loading="lazy"
+                    alt="Mapa da jornada do pedido de regime especial: ações, frases, sentimentos, pontos de dor e oportunidades em cada etapa"
+                  />
+                  <figcaption>
+                    Mapeamento do contexto e da jornada do pedido, por etapa
+                  </figcaption>
+                </figure>
+                <div class="learn">
+                  <p class="label">Principais aprendizados</p>
+                  <ul>
+                    <li>
+                      <b>Priorização e falta de clareza no processo do pedido</b
+                      ><span
+                        >As empresas têm um esforço a somar e o pedido não sabia
+                        quanto pode demorar. Não conseguiam acompanhar o estado
+                        deste pedido, pelo que algumas empresas iam verificar na
+                        caixa de mensagens se tinham alguma resposta
+                        diariamente.</span
+                      >
+                    </li>
+                    <li>
+                      <b>Envio de pedidos e documentação</b
+                      ><span
+                        >O processo enfrenta problemas de eficiência documental:
+                        pedidos incompletos ou com documento em falta,
+                        digitalizações de má qualidade, excesso de papel físico
+                        e documentos extensos onde apenas alguns campos são
+                        relevantes para a identificação do trabalhador.</span
+                      >
+                    </li>
+                    <li>
+                      <b>Tempo de tratamento do pedido</b
+                      ><span
+                        >Desde que a empresa inicia o registo especial até o
+                        pedido ser deferido, pode levar um mês.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-prototipo" /></svg
+                  ></span>
+                  <p class="label">Etapa 2</p>
+                  <h3>Ideações e refinamentos da solução</h3>
+                </div>
+                <dl class="facts">
+                  <dt>Executado</dt>
+                  <dd>
+                    Foram feitas sessões de ideação com o projeto para
+                    simplificar o fluxograma pensado.
+                  </dd>
+                  <dt>Entregáveis</dt>
+                  <dd>
+                    Fluxograma da nova solução e fluxo de protótipo nos perfis
+                    da empresa e do funcionário da Segurança Social.
+                  </dd>
+                </dl>
+              </div>
+              <figure>
+                <img
+                  class="case-img"
+                  src="images/vinculos-fluxo.png"
+                  width="4096"
+                  height="690"
+                  loading="lazy"
+                  alt="Fluxograma da nova solução, com as raias da entidade empregadora e da Segurança Social"
+                />
+                <figcaption>
+                  Fluxo da nova solução nos dois perfis: entidade empregadora e
+                  Segurança Social
+                </figcaption>
+              </figure>
+              <div class="two">
+                <div class="learn">
+                  <p class="label">Necessidades da empresa</p>
+                  <ul>
+                    <li>
+                      <b>Processo claro e com acompanhamento</b
+                      ><span
+                        >Mapeamento dos pedidos que existem com o contexto do
+                        detalhe do vínculo do trabalhador. Área dedicada apenas
+                        aos pedidos sobre alterações de vínculos, onde a empresa
+                        passa a acompanhar sem mais autonomia e não ficar refém
+                        apenas da área de mensagens com notificações
+                        eletrónicas.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="learn">
+                  <p class="label">Necessidades do negócio</p>
+                  <ul>
+                    <li>
+                      <b
+                        >Área de trabalho dedicada aos pedidos solicitados pela
+                        empresa sobre vínculos</b
+                      ><span
+                        >Migração do processo de tratamento de pedidos de
+                        vínculos direto no Portal da Segurança Social Direta.
+                        Automatização nas validações de pedidos mais simples.
+                        Controlo e mais confiança nas informações dos pedidos
+                        por conta de submissões em contexto do vínculo do
+                        trabalhador.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-sintetizacao" /></svg
+                  ></span>
+                  <p class="label">Etapa 3</p>
+                  <h3>
+                    Alinhamentos de design system, acessibilidade e conteúdo com
+                    a equipa de usabilidade do Instituto de Informática
+                  </h3>
+                </div>
+                <dl class="facts">
+                  <dt>Executado</dt>
+                  <dd>
+                    Foram feitas sessões de revisão sobre design system,
+                    acessibilidade e conteúdo sobre as propostas dos fluxos.
+                  </dd>
+                  <dt>Entregáveis</dt>
+                  <dd>
+                    Melhorias identificadas no conteúdo, revisão sobre a
+                    utilização dos componentes e mapeamento da documentação de
+                    acessibilidade.
+                  </dd>
+                </dl>
+              </div>
+              <figure>
+                <img
+                  class="case-img"
+                  src="images/vinculos-area.png"
+                  width="1280"
+                  height="720"
+                  loading="lazy"
+                  alt="Página Vínculos de trabalhadores na Segurança Social Direta, com o cartão Pedidos sobre vínculos"
+                />
+                <figcaption>
+                  Área de vínculos de trabalhadores na Segurança Social Direta
+                </figcaption>
+              </figure>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-pesquisa" /></svg
+                  ></span>
+                  <p class="label">Etapa 4</p>
+                  <h3>Pesquisa de validação</h3>
+                </div>
+                <dl class="facts">
+                  <dt>Executado</dt>
+                  <dd>
+                    Foram feitos testes de usabilidade para cada tipo de pedido
+                    e na visão da empresa, para validar as soluções pensadas.
+                  </dd>
+                  <dt>Entregáveis</dt>
+                  <dd>
+                    Relatórios no formato one-pager com mapa de oportunidades e
+                    melhorias sobre as soluções, ajudando também na gestão de
+                    priorização do roadmap do projeto.
+                  </dd>
+                </dl>
+              </div>
+              <figure>
+                <img
+                  class="case-img"
+                  src="images/vinculos-sessoes.png"
+                  width="1866"
+                  height="538"
+                  loading="lazy"
+                  alt="Quadro com as notas das 12 sessões com entidades empregadoras e a sintetização dos dados"
+                />
+                <figcaption>
+                  Sessões com entidades empregadoras e sintetização dos dados
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </section>
+
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#trabalho"
+            ><svg><use href="#i-back" /></svg>Voltar</a
+          >
+          <a class="btn btn-ghost" href="#ciclo"
+            >Próximo case<svg><use href="#i-arrow" /></svg
+          ></a>
+        </div>
+      </main>
+
+      <!-- ============ CASE: CICLO ============ -->
+      <main class="page" data-page="ciclo" hidden>
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#trabalho"
+            ><svg><use href="#i-back" /></svg>Voltar</a
+          >
+          <a class="btn btn-ghost" href="#vinculos"
+            >Case anterior<svg><use href="#i-arrow" /></svg
+          ></a>
+        </div>
+
+        <section class="case-top" aria-labelledby="h-cic">
+          <div class="case-head">
+            <div class="intro">
+              <div class="orgs">
+                <span class="label">Segurança Social Direta</span
+                ><span class="label">Instituto de Informática</span>
+              </div>
+              <h1 id="h-cic" class="heading">
+                Simplificação do Ciclo Contributivo
+              </h1>
+            </div>
+            <img
+              class="case-img"
+              src="images/ciclo-desktop.png"
+              width="1500"
+              height="1125"
+              alt="Painel das obrigações contributivas da Segurança Social Direta, num ecrã de computador"
+            />
+          </div>
+          <p class="ctx">
+            A Segurança Social é um sistema criado pelo governo para proteger os
+            cidadãos em situações como doença, desemprego, velhice ou
+            maternidade, garantindo apoio financeiro e acesso a serviços
+            essenciais. Para além disso, é por esta plataforma que a entidade
+            empregadora se regista e responde perante as suas obrigações.
+          </p>
+        </section>
+
+        <section class="block" aria-labelledby="h-cic-des">
+          <p class="label" id="h-cic-des">Desafio</p>
+          <ul class="challenges">
+            <li>
+              <span class="i num">01</span
+              ><span
+                ><b>Automatização do apuramento das contribuições</b> para
+                eliminar tarefas manuais repetitivas.</span
+              >
+            </li>
+            <li>
+              <span class="i num">02</span
+              ><span
+                ><b>Obter dados mais precisos e confiáveis</b> para a gestão
+                contributiva.</span
+              >
+            </li>
+            <li>
+              <span class="i num">03</span
+              ><span
+                ><b>Diminuir a carga de trabalho</b> na preparação e no envio
+                das declarações mensais à Segurança Social.</span
+              >
+            </li>
+            <li>
+              <span class="i num">04</span
+              ><span
+                ><b>Transparência no cálculo</b> das obrigações
+                contributivas.</span
+              >
+            </li>
+            <li>
+              <span class="i num">05</span
+              ><span
+                ><b>Envio simplificado</b> da comunicação fora do prazo e do
+                acerto de valores.</span
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="block" aria-labelledby="h-cic-proc" style="gap: 48px">
+          <div class="sh full">
+            <div class="stack">
+              <p class="label">Racional do processo</p>
+              <h2 id="h-cic-proc" class="subheading">
+                Cinco etapas, da descoberta à validação
+              </h2>
+            </div>
+          </div>
+          <div class="stages">
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-pesquisa" /></svg
+                  ></span>
+                  <p class="label">Etapa 1</p>
+                  <h3>Pesquisa de descoberta</h3>
+                </div>
+                <dl class="facts">
+                  <dt>Executado</dt>
+                  <dd>
+                    Foram feitas entrevistas de aprofundamento, com guiões e
+                    observações, tanto com empresas como com funcionários da
+                    Segurança Social.
+                  </dd>
+                  <dt>Entregáveis</dt>
+                  <dd>
+                    Relatório com as informações que respondem ao envolvimento
+                    da empresa, funcionários e serviços na gestão do cálculo das
+                    obrigações contributivas e na geração do comprovativo de
+                    pagamento das contribuições.
+                  </dd>
+                </dl>
+              </div>
+              <div class="two full">
+                <figure>
+                  <img
+                    class="case-img"
+                    src="images/ciclo-pesquisa.png"
+                    width="1351"
+                    height="645"
+                    loading="lazy"
+                    alt="Quadro com os insights e grupos de afinidades das entrevistas com funcionários e contabilistas, e os respetivos relatórios"
+                  />
+                  <figcaption>
+                    Sessões com entidades empregadoras e sintetização dos dados
+                    recolhidos
+                  </figcaption>
+                </figure>
+                <div class="learn">
+                  <p class="label">Principais aprendizados</p>
+                  <ul>
+                    <li>
+                      <b>Visão do funcionário da Segurança Social</b
+                      ><span
+                        >Processos manuais e morosos, pois tratam de Declarações
+                        de Remunerações (DR) enviadas pelas empresas
+                        mensalmente. O número das DR podem chegar de 30 a 60
+                        ficheiros por empresa e algumas delas ainda são enviadas
+                        por papel. Além disso, o tratamento dos erros é manual e
+                        cria uma dependência de aceder a esses funcionalidades
+                        na Segurança Social.</span
+                      >
+                    </li>
+                    <li>
+                      <b>Visão do contribuinte</b
+                      ><span
+                        >O processo de exceção é enviado das DR: existe uma
+                        certa pressão no perfil do contabilista, pois as
+                        empresas preferem deixar este papel a este público.
+                        Sendo assim, criam uma grande responsabilidade ao surgir
+                        eventualmente alguns dos erros no conta corrente da
+                        empresa na Segurança Social. Outro aspeto que foi
+                        mencionado é o receio de negociar sobre correções e
+                        receios, pois é necessário enviar dois ficheiros: 1
+                        ficheiro registado das remunerações dos trabalhadores
+                        enviados e 1 ficheiro com os dados corretos das
+                        remunerações sobre os trabalhadores.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-sessoes" /></svg
+                  ></span>
+                  <p class="label">Etapa 2</p>
+                  <h3>Workshop com stakeholders do projeto</h3>
+                </div>
+                <dl class="facts">
+                  <dt>Executado</dt>
+                  <dd>
+                    Foram feitas sessões de workshop para a construção do fluxo
+                    de solução e priorização do MoSCoW, para mapear as etapas de
+                    construção da solução no projeto.
+                  </dd>
+                  <dt>Entregáveis</dt>
+                  <dd>
+                    Jornada da solução no futuro e mapa de priorização para o
+                    roadmap do projeto.
+                  </dd>
+                </dl>
+              </div>
+              <figure>
+                <img
+                  class="case-img"
+                  src="images/ciclo-workshop.png"
+                  width="1351"
+                  height="819"
+                  loading="lazy"
+                  alt="Quadro do workshop com a jornada do futuro, o espaço dos post-it e a priorização com o método MoSCoW"
+                />
+                <figcaption>
+                  Jornada de futuro e priorização das etapas com o método MoSCoW
+                </figcaption>
+              </figure>
+              <div class="two">
+                <div class="learn">
+                  <p class="label">Necessidades da empresa</p>
+                  <ul>
+                    <li>
+                      <b>Processo mais rápido e transparente</b
+                      ><span
+                        >Funcionalidade que traz a organização das remunerações
+                        e cálculos das obrigações contributivas dos
+                        trabalhadores para o pagamento. Facilitando na correção
+                        ou validação das remunerações sem ter a necessidade de
+                        criar e enviar ficheiros duplicados à Segurança Social.
+                        Ter autonomia sobre as alterações de remunerações dos
+                        trabalhadores.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="learn">
+                  <p class="label">Necessidades do negócio</p>
+                  <ul>
+                    <li>
+                      <b>Automatismo no cálculo e tratamento das remunerações</b
+                      ><span
+                        >Cálculo das remunerações e contribuições automáticas
+                        baseadas nas informações dos vínculos de trabalhadores,
+                        faixas e interrupções de trabalho automáticas.
+                        Validações das remunerações automáticas. Tratamento das
+                        remunerações manuais apenas em situações específicas, ou
+                        seja, quando for cenário de exceção.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-prototipo" /></svg
+                  ></span>
+                  <p class="label">Etapa 3</p>
+                  <h3>Ideações e refinamentos da solução</h3>
+                </div>
+                <dl class="facts">
+                  <dt>Executado</dt>
+                  <dd>
+                    Foram feitas sessões de ideação com o projeto para
+                    simplificar o fluxograma pensado.
+                  </dd>
+                  <dt>Entregáveis</dt>
+                  <dd>
+                    Fluxos de protótipo nos perfis da empresa e do funcionário
+                    da Segurança Social.
+                  </dd>
+                </dl>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-sintetizacao" /></svg
+                  ></span>
+                  <p class="label">Etapa 4</p>
+                  <h3>
+                    Alinhamentos de design system, acessibilidade e conteúdo com
+                    a equipa de usabilidade do Instituto de Informática
+                  </h3>
+                </div>
+                <dl class="facts">
+                  <dt>Executado</dt>
+                  <dd>
+                    Foram feitas sessões de revisão sobre design system,
+                    acessibilidade e conteúdo sobre os protótipos dos fluxos.
+                  </dd>
+                  <dt>Entregáveis</dt>
+                  <dd>
+                    Melhorias identificadas no conteúdo, revisão sobre a
+                    utilização dos componentes, criação de novos componentes e
+                    mapeamento da documentação de acessibilidade.
+                  </dd>
+                </dl>
+              </div>
+              <figure style="align-items: center">
+                <img
+                  class="case-img"
+                  src="images/ciclo-painel.png"
+                  width="662"
+                  height="498"
+                  style="max-width: 800px"
+                  loading="lazy"
+                  alt="Painel das obrigações contributivas na Segurança Social Direta, com avisos, data-limite para confirmar valores e o apuramento do mês"
+                />
+                <figcaption>
+                  Painel das obrigações contributivas revisto com a equipa de
+                  usabilidade
+                </figcaption>
+              </figure>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-pesquisa" /></svg
+                  ></span>
+                  <p class="label">Etapa 5</p>
+                  <h3>Pesquisa de validação</h3>
+                </div>
+                <dl class="facts">
+                  <dt>Executado</dt>
+                  <dd>
+                    Foram feitos testes de usabilidade para cada etapa do
+                    apuramento da contribuição (confirmação, obrigação
+                    contributiva, gestão de valores, pedidos de comunicação de
+                    valores e comunicações) na visão da empresa, para validar as
+                    soluções pensadas.
+                  </dd>
+                  <dt>Entregáveis</dt>
+                  <dd>
+                    Relatórios no formato one-pager com mapa de oportunidades e
+                    melhorias sobre as soluções, ajudando na gestão de
+                    priorização do roadmap do projeto.
+                  </dd>
+                </dl>
+              </div>
+              <figure style="align-items: center">
+                <img
+                  class="case-img"
+                  src="images/ciclo-validacao.png"
+                  width="567"
+                  height="821"
+                  style="max-width: 567px"
+                  loading="lazy"
+                  alt="Quadro de consolidação e relatório, com a sintetização de cada uma das seis tarefas dos testes e das notas finais"
+                />
+                <figcaption>
+                  Sintetização dos testes e priorização das melhorias
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </section>
+
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#trabalho"
+            ><svg><use href="#i-back" /></svg>Voltar</a
+          >
+          <a class="btn btn-ghost" href="#vinculos"
+            >Case anterior<svg><use href="#i-arrow" /></svg
+          ></a>
+        </div>
+      </main>
+
+      <!-- ============ CURRÍCULO ============ -->
+      <main class="page" data-page="curriculo" hidden>
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#sobre"
+            ><svg><use href="#i-back" /></svg>Voltar ao portfólio</a
+          >
+        </div>
+
+        <div class="cv">
+          <section class="card" aria-labelledby="h-cv">
+            <p class="label">Currículo</p>
+            <div>
+              <h1 id="h-cv">Rayane Nunes</h1>
+              <p class="role-t">Product Designer · UX Researcher</p>
+            </div>
+            <p class="contact-line">
+              <span>Lisboa, Portugal</span><span class="num">910 561 682</span
+              ><span>rayanenlima@gmail.com</span>
+            </p>
+            <p class="summary">
+              Sou formada em Marketing (Publicidade e Propaganda), com
+              background em design gráfico e inbound marketing. Foi ao trabalhar
+              com produtos digitais que descobri a paixão pela experiência do
+              utilizador e migrei para UX/UI. Como Product Designer e UX
+              Researcher, procuro construir produtos que resolvam problemas
+              reais e agreguem valor de forma acolhedora e responsável.
+            </p>
+          </section>
+
+          <section class="card fill" aria-labelledby="h-comp">
+            <p class="label" id="h-comp">Competências</p>
+            <div class="kv">
+              <p class="small muted">Ferramentas</p>
+              <div class="tags">
+                <span class="tag">Figma</span><span class="tag">FigJam</span
+                ><span class="tag">Miro</span><span class="tag">Hotjar</span
+                ><span class="tag">Notion</span>
+              </div>
+            </div>
+            <div class="kv">
+              <p class="small muted">Habilidades</p>
+              <div class="tags">
+                <span class="tag">Pesquisa qualitativa e UXR Ops</span
+                ><span class="tag">Testes de usabilidade</span
+                ><span class="tag"
+                  >Prototipagem de baixa, média e alta fidelidade</span
+                ><span class="tag">UI design</span
+                ><span class="tag">Double Diamond e Lean Inception</span
+                ><span class="tag">Governança de design system</span
+                ><span class="tag"
+                  >Documentação de metodologia de pesquisa</span
+                >
+              </div>
+            </div>
+            <div class="kv">
+              <p class="small muted">Idiomas</p>
+              <p>Português — nativo<br />Inglês — B1</p>
+            </div>
+          </section>
+
+          <section class="block" aria-labelledby="h-jor">
+            <h2 id="h-jor" class="subheading">Minha jornada</h2>
+            <div class="jobs">
+              <article class="job">
+                <h3>UX Researcher</h3>
+                <p class="meta">
+                  Eviden · Instituto de Informática, I.P. — Jun 2026 –
+                  atualmente · Lisboa, Portugal
+                </p>
+                <ul>
+                  <li>Apoio à gestão e visão estratégica do UXR Ops;</li>
+                  <li>
+                    Garantia da documentação adequada dos métodos de pesquisa e
+                    dos estudos realizados;
+                  </li>
+                  <li>
+                    Criação e melhoria de templates, relatórios e documentos de
+                    boas práticas;
+                  </li>
+                  <li>
+                    Apoio à estruturação de passagens de conhecimento interno;
+                  </li>
+                  <li>
+                    Acompanhamento da execução de pesquisas, entrevistas, testes
+                    de usabilidade e workshops — estruturação, moderação e
+                    análise;
+                  </li>
+                </ul>
+              </article>
+              <article class="job">
+                <h3>UI/UX Designer</h3>
+                <p class="meta">
+                  Eviden · Instituto de Informática, I.P. — Ago 2023 – Jun 2026
+                  · Lisboa, Portugal
+                </p>
+                <ul>
+                  <li>
+                    Condução de pesquisas com utilizadores da Segurança Social
+                    Direta para entender necessidades e comportamentos;
+                  </li>
+                  <li>
+                    Integração em equipas multidisciplinares, contribuindo com
+                    insights de design;
+                  </li>
+                  <li>
+                    Participação nas fases de concepção, prototipagem e teste de
+                    usabilidade;
+                  </li>
+                  <li>
+                    Recolha contínua de feedback de utilizadores e stakeholders
+                    para aprimorar interfaces;
+                  </li>
+                </ul>
+              </article>
+              <article class="job">
+                <h3>Product Designer</h3>
+                <p class="meta">
+                  Boavista Tecnologia — Nov 2021 – Jul 2023 · Fortaleza, Brasil
+                </p>
+                <ul>
+                  <li>
+                    Compreensão de especificações de produto e psicologia do
+                    utilizador com apoio de dados (Hotjar) e entrevistas;
+                  </li>
+                  <li>
+                    Condução de Double Diamond e Lean Inception do início ao fim
+                    da entrega;
+                  </li>
+                  <li>
+                    Documentação dos processos no Notion para comunicação entre
+                    esquadrões;
+                  </li>
+                  <li>
+                    Wireframes e protótipos de média e alta fidelidade, testados
+                    em Figma e em entrevistas;
+                  </li>
+                  <li>
+                    Guardiã do design system, alimentando-o com novos
+                    componentes e respeitando o guia de estilo;
+                  </li>
+                </ul>
+              </article>
+              <article class="job">
+                <h3>Analista de marketing digital</h3>
+                <p class="meta">
+                  Boavista Tecnologia — Dez 2017 – Nov 2021 · Fortaleza, Brasil
+                </p>
+                <ul>
+                  <li>
+                    Análise de dados do RD Station para compreender e converter
+                    leads;
+                  </li>
+                  <li>
+                    Construção de estratégias e fluxos de automação para gerar
+                    oportunidades de SDR;
+                  </li>
+                  <li>
+                    Apoio ao desenvolvimento da identidade visual de landing
+                    pages;
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="card"
+            style="align-self: start"
+            aria-labelledby="h-form"
+          >
+            <p class="label" id="h-form">Formação</p>
+            <div class="kv">
+              <h3 class="lead">Educação</h3>
+              <ul class="edu-list">
+                <li>
+                  <span>MBA em UX Design e User Research</span
+                  ><span class="meta">UNIFATEC — Mar 2023 – Set 2024</span>
+                </li>
+                <li>
+                  <span>Certificação em UI/UX Designer</span
+                  ><span class="meta">EBAC — Fev 2021 – Nov 2021</span>
+                </li>
+                <li>
+                  <span>Bacharelado em Publicidade e Propaganda</span
+                  ><span class="meta"
+                    >Universidade de Fortaleza — 2010 – 2014</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="kv">
+              <h3 class="lead">Certificações</h3>
+              <ul class="edu-list">
+                <li><span>NASA Space Apps — Covid-19 Challenge</span></li>
+                <li>
+                  <span
+                    >UX &amp; Design Thinking: Experiência do Utilizador nos
+                    Negócios</span
+                  >
+                </li>
+                <li><span>Design Thinking</span></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <h2 class="subheading">Vamos conversar</h2>
+          <p class="muted">
+            Disponível para projetos de product design e user research.
+          </p>
+        </div>
+        <ul class="contacts">
+          <li>
+            <a href="mailto:rayanenlima@gmail.com">rayanenlima@gmail.com</a>
+          </li>
+          <li class="num">910 561 682</li>
+          <li>Lisboa, Portugal</li>
+        </ul>
+        <p class="copy">© 2026 Rayane Nunes · Product Designer</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/motion@12.43.0/dist/motion.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+  </body>
+</html>
