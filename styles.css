@@ -204,7 +204,7 @@ section { scroll-margin-top: var(--s24); }
 .results { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--s32); padding-block: var(--s24); }
 .results::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 2px dotted var(--line); }
 .metric { position: relative; background: var(--surface-card); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: var(--s24); display: flex; flex-direction: column; gap: var(--s8); }
-.metric .big { font-family: var(--font-doto); font-weight: 700; font-size: clamp(48px, 6vw, 80px); line-height: .9; letter-spacing: -0.02em; }
+.metric .big { font-family: var(--font-sans); font-weight: 700; font-size: clamp(48px, 6vw, 80px); line-height: .9; letter-spacing: -0.02em; }
 .metric .what { font-size: 18px; letter-spacing: -0.01em; }
 .metric p { color: var(--ink-muted); font-size: 14px; margin-top: var(--s8); }
 @media (max-width: 760px) { .results { grid-template-columns: 1fr; } .results::before { top: 0; bottom: 0; left: 32px; right: auto; border-top: 0; border-left: 2px dotted var(--line); } }
