@@ -11,12 +11,16 @@
       name="description"
       content="Portfólio de Rayane Nunes, Product Designer e UX Researcher em Lisboa."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="alternate" hreflang="pt-PT" href="https://rayane-nunes.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://rayane-nunes.github.io/en/" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Doto:wght@400;700&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap"
+      rel="preload"
+      href="fonts/Nohemi-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script>
       // hide content until animations.js sets the initial states; give up after 3s if Motion is slow
@@ -100,7 +104,13 @@
 
     <nav class="rail" aria-label="Principal">
       <a class="brand" href="#sobre" data-link>
-        <span class="brand-block" aria-hidden="true"></span>
+        <img
+          class="brand-logo"
+          src="logos/rn-monograma.svg"
+          width="40"
+          height="40"
+          alt=""
+        />
         <span class="brand-name"
           >Ray Nunes<br /><span class="muted">Product Designer</span></span
         >
@@ -122,6 +132,10 @@
           >Currículo<svg><use href="#i-chev" /></svg
         ></a>
       </div>
+      <div class="lang" aria-label="Idioma">
+        <a href="./" hreflang="pt-PT" aria-current="true">PT</a>
+        <a href="en/" hreflang="en" lang="en" data-lang-switch>EN</a>
+      </div>
       <div class="start">
         <p class="label"><span class="dot"></span>Comece aqui</p>
         <a class="btn btn-ghost btn-block" href="#trabalho"
@@ -142,18 +156,7 @@
       <main class="page" data-page="home">
         <section id="sobre" class="hero" aria-labelledby="h-sobre">
           <p class="label">Sobre</p>
-          <div class="lockup">
-            <div
-              class="photo"
-              role="img"
-              aria-label="Foto de Ray Nunes (a adicionar)"
-            >
-              <span>RN</span>
-            </div>
-            <div>
-              <h1 id="h-sobre" class="display">Ray Nunes</h1>
-            </div>
-          </div>
+          <h1 id="h-sobre" class="sr-only">Ray Nunes</h1>
           <div class="hero-grid">
             <p class="statement">
               Acredito e trabalho com decisões apoiadas em

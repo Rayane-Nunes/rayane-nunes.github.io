@@ -1,0 +1,1472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Ray Nunes</title>
+    <meta
+      name="description"
+      content="Portfolio of Rayane Nunes, Product Designer and UX Researcher in Lisbon."
+    />
+    <link rel="alternate" hreflang="pt-PT" href="https://rayane-nunes.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://rayane-nunes.github.io/en/" />
+    <link
+      rel="preload"
+      href="../fonts/Nohemi-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      // hide content until animations.js sets the initial states; give up after 3s if Motion is slow
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("motion-pending");
+        setTimeout(function () { document.documentElement.classList.remove("motion-pending"); }, 3000);
+      }
+    </script>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-arrow" viewBox="0 0 16 16">
+        <path
+          d="M3 8h10M9 4l4 4-4 4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="square"
+        />
+      </symbol>
+      <symbol id="i-back" viewBox="0 0 16 16">
+        <path
+          d="M13 8H3M7 4L3 8l4 4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="square"
+        />
+      </symbol>
+      <symbol id="i-chev" viewBox="0 0 16 16">
+        <path
+          d="M6 3l5 5-5 5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="square"
+        />
+      </symbol>
+      <symbol id="i-out" viewBox="0 0 16 16">
+        <path
+          d="M5 11l6-6M6 4.5h5.5V10"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="square"
+        />
+      </symbol>
+      <symbol id="i-pesquisa" viewBox="0 0 20 20">
+        <g fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="8.5" cy="8.5" r="5.5" />
+          <path d="M12.5 12.5l5 5" />
+        </g>
+      </symbol>
+      <symbol id="i-sintetizacao" viewBox="0 0 20 20">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linejoin="round"
+        >
+          <path d="M10 3l7 3.5-7 3.5-7-3.5z" />
+          <path d="M3 10.5l7 3.5 7-3.5M3 14l7 3.5 7-3.5" />
+        </g>
+      </symbol>
+      <symbol id="i-prototipo" viewBox="0 0 20 20">
+        <g fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2.5" y="3.5" width="15" height="13" rx="1.5" />
+          <path d="M2.5 7.5h15M7 7.5v9" />
+        </g>
+      </symbol>
+      <symbol id="i-sessoes" viewBox="0 0 20 20">
+        <g fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="7" cy="7" r="3" />
+          <circle cx="14" cy="8" r="2.4" />
+          <path
+            d="M1.8 17c.6-3 2.7-4.6 5.2-4.6s4.6 1.6 5.2 4.6M12.4 12.6c2.6-.4 4.9 1 5.6 4.4"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <nav class="rail" aria-label="Main">
+      <a class="brand" href="#sobre" data-link>
+        <img
+          class="brand-logo"
+          src="../logos/rn-monograma.svg"
+          width="40"
+          height="40"
+          alt=""
+        />
+        <span class="brand-name"
+          >Ray Nunes<br /><span class="muted">Product Designer</span></span
+        >
+      </a>
+      <div class="nav" id="nav">
+        <a href="#sobre" data-nav="sobre"
+          >About<svg><use href="#i-chev" /></svg
+        ></a>
+        <a href="#trabalho" data-nav="trabalho"
+          >Work<svg><use href="#i-chev" /></svg
+        ></a>
+        <a href="#processo" data-nav="processo"
+          >Process<svg><use href="#i-chev" /></svg
+        ></a>
+        <a href="#experiencias" data-nav="experiencias"
+          >Experience<svg><use href="#i-chev" /></svg
+        ></a>
+        <a href="#curriculo" data-nav="curriculo"
+          >CV<svg><use href="#i-chev" /></svg
+        ></a>
+      </div>
+      <div class="lang" aria-label="Language">
+        <a href="../" hreflang="pt-PT" lang="pt-PT" data-lang-switch>PT</a>
+        <a href="./" hreflang="en" aria-current="true">EN</a>
+      </div>
+      <div class="start">
+        <p class="label"><span class="dot"></span>Start here</p>
+        <a class="btn btn-ghost btn-block" href="#trabalho"
+          >See the case studies<svg><use href="#i-arrow" /></svg
+        ></a>
+        <a
+          class="btn btn-ghost btn-block"
+          href="https://www.linkedin.com/in/rayane-nunes"
+          target="_blank"
+          rel="noopener"
+          >Let's talk<svg><use href="#i-out" /></svg
+        ></a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <!-- ============ HOME ============ -->
+      <main class="page" data-page="home">
+        <section id="sobre" class="hero" aria-labelledby="h-sobre">
+          <p class="label">About</p>
+          <h1 id="h-sobre" class="sr-only">Ray Nunes</h1>
+          <div class="hero-grid">
+            <p class="statement">
+              I believe in decisions based on <strong>real data</strong>, in
+              teams where research has a real voice.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#trabalho"
+                >See my case studies<svg><use href="#i-arrow" /></svg
+              ></a>
+              <a
+                class="btn btn-ghost"
+                href="../cv-rayane-nunes-en.pdf"
+                target="_blank"
+                rel="noopener"
+                >Open CV<svg><use href="#i-out" /></svg
+              ></a>
+            </div>
+            <ul class="contacts">
+              <li class="num">910 561 682</li>
+              <li>
+                <a href="mailto:rayanenlima@gmail.com">rayanenlima@gmail.com</a>
+              </li>
+              <li>Lisbon, Portugal</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rayane-nunes"
+                  target="_blank"
+                  rel="noopener"
+                  >linkedin.com/in/rayane-nunes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          id="trabalho"
+          class="block"
+          aria-labelledby="h-trab"
+          style="gap: 32px"
+        >
+          <div class="sh">
+            <div class="stack">
+              <p class="label">Work</p>
+              <h2 id="h-trab" class="subheading">What do you want to see first?</h2>
+            </div>
+          </div>
+          <div class="cards2">
+            <article class="case-card">
+              <div class="tags">
+                <span class="tag">Journey mapping</span
+                ><span class="tag">Usability testing</span>
+              </div>
+              <img
+                class="case-img"
+                src="../images/vinculos-tablet.png"
+                width="1500"
+                height="1125"
+                alt="Screen to check a worker's contract on Segurança Social Direta, on a tablet"
+              />
+              <p class="label">Case study</p>
+              <h3>
+                Autonomy to follow<br />the requests about<br />their workers
+              </h3>
+              <p class="desc">Managing work contracts · Segurança Social Direta</p>
+              <a class="btn btn-primary" href="#vinculos"
+                >View case study<svg><use href="#i-arrow" /></svg
+              ></a>
+            </article>
+            <article class="case-card">
+              <div class="tags">
+                <span class="tag">Workshop</span
+                ><span class="tag">MoSCoW Prioritisation</span>
+              </div>
+              <img
+                class="case-img"
+                src="../images/ciclo-desktop.png"
+                width="1500"
+                height="1125"
+                alt="Contribution obligations dashboard on Segurança Social Direta, on a computer screen"
+              />
+              <p class="label">Case study</p>
+              <h3>
+                How calculating contributions stopped being manual work every
+                month
+              </h3>
+              <p class="desc">
+                Simplifying the Contribution Cycle · Segurança Social Direta
+              </p>
+              <a class="btn btn-primary" href="#ciclo"
+                >View case study<svg><use href="#i-arrow" /></svg
+              ></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta" aria-labelledby="h-cta1">
+          <h2 id="h-cta1" class="subheading">
+            Do you want to hear about these projects in detail?
+          </h2>
+          <div class="right">
+            <p>
+              In a conversation, I can show you the decisions that did not fit
+              in a case study: what we tested, what failed and what changed
+              after.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://www.linkedin.com/in/rayane-nunes"
+              target="_blank"
+              rel="noopener"
+              >Let's talk<svg><use href="#i-arrow" /></svg
+            ></a>
+          </div>
+        </section>
+
+        <section id="processo" class="block" aria-labelledby="h-proc">
+          <div class="proc-head">
+            <div
+              class="stack"
+              style="display: flex; flex-direction: column; gap: 16px"
+            >
+              <p class="label">Process</p>
+              <h2 id="h-proc" class="heading">How I work</h2>
+            </div>
+            <svg
+              class="drag-hint"
+              viewBox="0 0 112 112"
+              role="img"
+              aria-label="Drag to the side"
+            >
+              <defs>
+                <path
+                  id="arc"
+                  d="M56 56 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"
+                />
+              </defs>
+              <circle
+                cx="56"
+                cy="56"
+                r="30"
+                fill="none"
+                stroke="var(--line)"
+                stroke-width="1"
+              />
+              <path
+                d="M44 56h24M61 49l7 7-7 7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+              <text>
+                <textPath href="#arc">
+                  Drag to the side · Drag to the side ·
+                </textPath>
+              </text>
+            </svg>
+          </div>
+          <div
+            class="track"
+            id="track"
+            tabindex="0"
+            aria-label="Process steps, scroll sideways"
+          >
+            <article class="step">
+              <span class="n">1</span>
+              <h3>Definition</h3>
+              <p>
+                Together, we think about the product goals and define them. We
+                also plan how the design journey connects to the agreed
+                delivery.
+              </p>
+            </article>
+            <article class="step">
+              <span class="n">2</span>
+              <h3>Research</h3>
+              <p>
+                The moment of research and data analysis. Here we find
+                hypotheses, pain points and opportunities in the process.
+              </p>
+            </article>
+            <article class="step">
+              <span class="n">3</span>
+              <h3>Synthesis</h3>
+              <p>
+                I organise what we collected into journeys, maps and reports.
+                This turns data from many places into design decisions.
+              </p>
+            </article>
+            <article class="step">
+              <span class="n">4</span>
+              <h3>Ideation</h3>
+              <p>
+                A moment of co-creation. We test ideas in a strategic way, and
+                they always follow the product goals.
+              </p>
+            </article>
+            <article class="step">
+              <span class="n">5</span>
+              <h3>Validation</h3>
+              <p>
+                Medium and high fidelity prototypes, tested with real users. We
+                keep improving them until the solution is clear.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="experiencias" class="exp" aria-labelledby="h-exp">
+          <div class="proc-head">
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <p class="label">Experience</p>
+              <h2 id="h-exp" class="heading">My experience</h2>
+            </div>
+            <a
+              class="btn btn-ghost"
+              href="../cv-rayane-nunes-en.pdf"
+              target="_blank"
+              rel="noopener"
+              >Open CV<svg><use href="#i-out" /></svg
+            ></a>
+          </div>
+          <div class="timeline">
+            <div class="tl-row">
+              <span class="when num">2026 – now</span>
+              <div>
+                <p class="role">UX Researcher</p>
+                <p class="org">Eviden · Instituto de Informática, I.P.</p>
+              </div>
+            </div>
+            <div class="tl-row">
+              <span class="when num">2023 – 2026</span>
+              <div>
+                <p class="role">UI/UX Designer</p>
+                <p class="org">Eviden · Instituto de Informática, I.P.</p>
+              </div>
+            </div>
+            <div class="tl-row">
+              <span class="when num">2021 – 2023</span>
+              <div>
+                <p class="role">Product Designer</p>
+                <p class="org">Boavista Tecnologia</p>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <p class="label">Skills</p>
+            <div class="skills">
+              <span>Research</span>
+              <div class="tags">
+                <span class="tag">Double Diamond</span
+                ><span class="tag">Lean Inception</span
+                ><span class="tag">MoSCoW Prioritisation</span
+                ><span class="tag">User journey</span>
+              </div>
+              <span>Design</span>
+              <div class="tags">
+                <span class="tag">Wireframes</span
+                ><span class="tag">Prototypes</span>
+              </div>
+              <span>Tools</span>
+              <div class="tags">
+                <span class="tag">Figma</span><span class="tag">FigJam</span
+                ><span class="tag">Miro</span><span class="tag">Hotjar</span
+                ><span class="tag">Notion</span>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <p class="label">Education</p>
+            <div class="edu">
+              <article class="edu-card">
+                <h4>MBA in UX Design and User Research</h4>
+                <p class="small muted num">UNIFATEC · 2023 – 2024</p>
+                <a
+                  class="btn btn-ghost"
+                  href="https://www.linkedin.com/in/rayane-nunes/overlay/Education/1044061776/treasury/?profileId=ACoAABbXYOcBKIok-MvJpVwYM6HiXqUFUcLqAwM"
+                  target="_blank"
+                  rel="noopener"
+                  >See certificate<svg><use href="#i-arrow" /></svg
+                ></a>
+              </article>
+              <article class="edu-card">
+                <h4>UI/UX Designer Certificate</h4>
+                <p class="small muted num">EBAC · 2021</p>
+                <a
+                  class="btn btn-ghost"
+                  href="https://www.linkedin.com/in/rayane-nunes/overlay/Education/753639635/treasury/?profileId=ACoAABbXYOcBKIok-MvJpVwYM6HiXqUFUcLqAwM"
+                  target="_blank"
+                  rel="noopener"
+                  >See certificate<svg><use href="#i-arrow" /></svg
+                ></a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" aria-labelledby="h-bio" style="gap: 32px">
+          <div
+            class="stack"
+            style="display: flex; flex-direction: column; gap: 16px"
+          >
+            <p class="label">Still here?</p>
+            <h2 id="h-bio" class="subheading">What is behind my work</h2>
+          </div>
+          <div class="bio">
+            <div class="text">
+              <p>
+                From Ceará to Lisbon, I followed a path guided by data, strategy
+                and people. My background in Advertising and in marketing
+                automation gave me a clear view: behaviour metrics are very
+                important.
+              </p>
+              <p>
+                I don't only design nice interfaces; I try to solve product
+                problems. I have led and taken part in full discovery and
+                delivery cycles with Lean Inception, and I have run research
+                with real users.
+              </p>
+              <p>
+                Today I work on Segurança Social Direta, with the biggest
+                challenge in design: designing for people who cannot choose not
+                to use the service. This responsibility changed the way I work:
+                clear decisions, based on real data, with research leading the
+                strategic decisions.
+              </p>
+            </div>
+            <figure>
+              <svg
+                class="map"
+                id="map"
+                viewBox="0 0 864 336"
+                role="img"
+                aria-label="World map with Fortaleza, in Brazil, and Lisbon, in Portugal, marked"
+              ></svg>
+              <div class="map-legend label">
+                <span
+                  ><i style="background: var(--data-green)"></i>Fortaleza,
+                  Ceará</span
+                ><span
+                  ><i style="background: var(--accent)"></i>Lisbon, today</span
+                >
+              </div>
+            </figure>
+          </div>
+        </section>
+
+        <section class="cta" aria-labelledby="h-cta2">
+          <h2 id="h-cta2" class="subheading">You reached the end. Shall we talk?</h2>
+          <div class="right">
+            <p>
+              I am available for product design and user research projects.
+              Write to me and I will tell you how I work.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://www.linkedin.com/in/rayane-nunes"
+              target="_blank"
+              rel="noopener"
+              >Let's talk<svg><use href="#i-arrow" /></svg
+            ></a>
+          </div>
+        </section>
+      </main>
+
+      <!-- ============ CASE: VÍNCULOS ============ -->
+      <main class="page" data-page="vinculos" hidden>
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#trabalho"
+            ><svg><use href="#i-back" /></svg>Back</a
+          >
+          <a class="btn btn-ghost" href="#ciclo"
+            >Next case study<svg><use href="#i-arrow" /></svg
+          ></a>
+        </div>
+
+        <section class="case-top" aria-labelledby="h-vin">
+          <div class="case-head">
+            <div class="intro">
+              <div class="orgs">
+                <span class="label">Segurança Social Direta</span
+                ><span class="label">Instituto de Informática</span>
+              </div>
+              <h1 id="h-vin" class="heading">
+                Requests about the work contracts of employees
+              </h1>
+            </div>
+            <img
+              class="case-img"
+              src="../images/vinculos-tablet.png"
+              width="1500"
+              height="1125"
+              alt="Screen to check a worker's contract on Segurança Social Direta, on a tablet"
+            />
+          </div>
+          <p class="ctx">
+            Social Security is a system created by the government to protect
+            people in situations like illness, unemployment, old age or
+            maternity. It gives financial support and access to essential
+            services. It is also the platform where employers keep their legal
+            obligations up to date.
+          </p>
+        </section>
+
+        <section class="block" aria-labelledby="h-vin-des">
+          <p class="label" id="h-vin-des">Challenges</p>
+          <ul class="challenges">
+            <li>
+              <span class="i num">01</span
+              ><span
+                ><b>Adapt</b> the feature and the work routine to the new
+                <b>Simplified Contribution Cycle in the daily life of
+                  companies</b
+                ></span
+              >
+            </li>
+            <li>
+              <span class="i num">02</span
+              ><span
+                >Give more <b>autonomy</b> to manage work contracts and to make
+                requests about them</span
+              >
+            </li>
+            <li>
+              <span class="i num">03</span
+              ><span
+                ><b>Reduce bureaucracy and give more context</b> to external and
+                internal users</span
+              >
+            </li>
+            <li>
+              <span class="i num">04</span
+              ><span
+                ><b>Automate and reduce the time to handle</b> requests to change
+                work contracts.</span
+              >
+            </li>
+            <li>
+              <span class="i num">05</span
+              ><span><b>Avoid errors</b> in workers' information</span>
+            </li>
+            <li>
+              <span class="i num">06</span
+              ><span
+                >Make sure the contract information of employees is
+                <b>more accurate</b>, before the move to the feature that
+                calculates the contribution obligations of companies</span
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="block" aria-labelledby="h-vin-res">
+          <p class="label" id="h-vin-res">Results</p>
+          <div class="results">
+            <div class="metric">
+              <span class="big num">+60K</span
+              ><span class="what">requests solved</span>
+              <p>
+                Employers now have the autonomy to ask for changes to their
+                workers' contracts, without opening support tickets.
+              </p>
+            </div>
+            <div class="metric">
+              <span class="big num">55%</span
+              ><span class="what">faster</span>
+              <p>
+                After the launch, we analysed internal data. We saw a drop in
+                the average time that Social Security needed to handle the
+                requests.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" aria-labelledby="h-vin-proc" style="gap: 48px">
+          <div class="sh full">
+            <div class="stack">
+              <p class="label">Process overview</p>
+              <h2 id="h-vin-proc" class="subheading">
+                Four steps, from alignment to validation
+              </h2>
+            </div>
+          </div>
+          <div class="stages">
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-sessoes" /></svg
+                  ></span>
+                  <p class="label">Step 1</p>
+                  <h3>Aligning requirement priorities</h3>
+                </div>
+                <dl class="facts">
+                  <dt>What we did</dt>
+                  <dd>
+                    We held sessions to align and prioritise requirements with
+                    the project team (Instituto de Informática) and the business
+                    (Social Security).
+                  </dd>
+                  <dt>Deliverables</dt>
+                  <dd>A map of user needs and business needs.</dd>
+                </dl>
+              </div>
+              <div class="two">
+                <figure>
+                  <img
+                    class="case-img"
+                    src="../images/vinculos-jornada.png"
+                    width="550"
+                    height="605"
+                    style="max-width: 500px"
+                    loading="lazy"
+                    alt="Journey map of the special regime request: actions, quotes, feelings, pain points and opportunities in each step"
+                  />
+                  <figcaption>
+                    Mapping the context and the request journey, step by step
+                  </figcaption>
+                </figure>
+                <div class="learn">
+                  <p class="label">Main learnings</p>
+                  <ul>
+                    <li>
+                      <b>Priorities and a process that was not clear</b
+                      ><span
+                        >Companies had a lot of extra work, and they did not know
+                        how long a request could take. They could not follow
+                        the status of the request, so some companies checked
+                        their message inbox every day to see if there was an
+                        answer.</span
+                      >
+                    </li>
+                    <li>
+                      <b>Sending requests and documents</b
+                      ><span
+                        >The process had problems with documents: incomplete
+                        requests or missing documents, scans with bad quality,
+                        too much paper, and long documents where only a few
+                        fields were useful to identify the worker.</span
+                      >
+                    </li>
+                    <li>
+                      <b>Time to handle a request</b
+                      ><span
+                        >From the moment the company starts the special
+                        registration until the request is approved, it can take
+                        one month.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-prototipo" /></svg
+                  ></span>
+                  <p class="label">Step 2</p>
+                  <h3>Ideation and refining the solution</h3>
+                </div>
+                <dl class="facts">
+                  <dt>What we did</dt>
+                  <dd>
+                    We held ideation sessions with the project team to simplify
+                    the planned flowchart.
+                  </dd>
+                  <dt>Deliverables</dt>
+                  <dd>
+                    A flowchart of the new solution and prototype flows for the
+                    company profile and for the Social Security employee
+                    profile.
+                  </dd>
+                </dl>
+              </div>
+              <figure>
+                <img
+                  class="case-img"
+                  src="../images/vinculos-fluxo.png"
+                  width="4096"
+                  height="690"
+                  loading="lazy"
+                  alt="Flowchart of the new solution, with one lane for the employer and one for Social Security"
+                />
+                <figcaption>
+                  Flow of the new solution in the two profiles: employer and
+                  Social Security
+                </figcaption>
+              </figure>
+              <div class="two">
+                <div class="learn">
+                  <p class="label">Company needs</p>
+                  <ul>
+                    <li>
+                      <b>A clear process that they can follow</b
+                      ><span
+                        >A map of the existing requests, with the details of the
+                        worker's contract. An area only for requests to change
+                        contracts, where the company can follow them with more
+                        autonomy and does not depend only on the messages area
+                        with electronic notifications.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="learn">
+                  <p class="label">Business needs</p>
+                  <ul>
+                    <li>
+                      <b
+                        >A work area only for the contract requests that
+                        companies send</b
+                      ><span
+                        >Moving the handling of contract requests directly into
+                        the Segurança Social Direta portal. Automatic checks for
+                        simpler requests. More control and more trust in the
+                        request information, because companies send requests
+                        from the worker's contract page.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-sintetizacao" /></svg
+                  ></span>
+                  <p class="label">Step 3</p>
+                  <h3>
+                    Design system, accessibility and content alignment with the
+                    usability team of Instituto de Informática
+                  </h3>
+                </div>
+                <dl class="facts">
+                  <dt>What we did</dt>
+                  <dd>
+                    We held review sessions about the design system,
+                    accessibility and content of the proposed flows.
+                  </dd>
+                  <dt>Deliverables</dt>
+                  <dd>
+                    Content improvements, a review of how the components are
+                    used, and a map of the accessibility documentation.
+                  </dd>
+                </dl>
+              </div>
+              <figure>
+                <img
+                  class="case-img"
+                  src="../images/vinculos-area.png"
+                  width="1280"
+                  height="720"
+                  loading="lazy"
+                  alt="The Worker contracts page on Segurança Social Direta, with the Requests about contracts card"
+                />
+                <figcaption>
+                  The worker contracts area on Segurança Social Direta
+                </figcaption>
+              </figure>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-pesquisa" /></svg
+                  ></span>
+                  <p class="label">Step 4</p>
+                  <h3>Validation research</h3>
+                </div>
+                <dl class="facts">
+                  <dt>What we did</dt>
+                  <dd>
+                    We ran usability tests for each type of request, from the
+                    company's point of view, to validate our solutions.
+                  </dd>
+                  <dt>Deliverables</dt>
+                  <dd>
+                    One-page reports with a map of opportunities and
+                    improvements for the solutions. They also helped to
+                    prioritise the project roadmap.
+                  </dd>
+                </dl>
+              </div>
+              <figure>
+                <img
+                  class="case-img"
+                  src="../images/vinculos-sessoes.png"
+                  width="1866"
+                  height="538"
+                  loading="lazy"
+                  alt="Board with the notes from the 12 sessions with employers and the data synthesis"
+                />
+                <figcaption>Sessions with employers and data synthesis</figcaption>
+              </figure>
+            </article>
+          </div>
+        </section>
+
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#trabalho"
+            ><svg><use href="#i-back" /></svg>Back</a
+          >
+          <a class="btn btn-ghost" href="#ciclo"
+            >Next case study<svg><use href="#i-arrow" /></svg
+          ></a>
+        </div>
+      </main>
+
+      <!-- ============ CASE: CICLO ============ -->
+      <main class="page" data-page="ciclo" hidden>
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#trabalho"
+            ><svg><use href="#i-back" /></svg>Back</a
+          >
+          <a class="btn btn-ghost" href="#vinculos"
+            >Previous case study<svg><use href="#i-arrow" /></svg
+          ></a>
+        </div>
+
+        <section class="case-top" aria-labelledby="h-cic">
+          <div class="case-head">
+            <div class="intro">
+              <div class="orgs">
+                <span class="label">Segurança Social Direta</span
+                ><span class="label">Instituto de Informática</span>
+              </div>
+              <h1 id="h-cic" class="heading">
+                Simplifying the Contribution Cycle
+              </h1>
+            </div>
+            <img
+              class="case-img"
+              src="../images/ciclo-desktop.png"
+              width="1500"
+              height="1125"
+              alt="Contribution obligations dashboard on Segurança Social Direta, on a computer screen"
+            />
+          </div>
+          <p class="ctx">
+            Social Security is a system created by the government to protect
+            people in situations like illness, unemployment, old age or
+            maternity. It gives financial support and access to essential
+            services. It is also the platform where employers register and meet
+            their obligations.
+          </p>
+        </section>
+
+        <section class="block" aria-labelledby="h-cic-des">
+          <p class="label" id="h-cic-des">Challenge</p>
+          <ul class="challenges">
+            <li>
+              <span class="i num">01</span
+              ><span
+                ><b>Automate the calculation of contributions</b> to remove
+                repetitive manual tasks.</span
+              >
+            </li>
+            <li>
+              <span class="i num">02</span
+              ><span
+                ><b>Get more precise and reliable data</b> to manage
+                contributions.</span
+              >
+            </li>
+            <li>
+              <span class="i num">03</span
+              ><span
+                ><b>Reduce the workload</b> to prepare and send the monthly
+                declarations to Social Security.</span
+              >
+            </li>
+            <li>
+              <span class="i num">04</span
+              ><span
+                ><b>Transparency in the calculation</b> of contribution
+                obligations.</span
+              >
+            </li>
+            <li>
+              <span class="i num">05</span
+              ><span
+                ><b>A simpler way to send</b> late communications and value
+                corrections.</span
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="block" aria-labelledby="h-cic-res">
+          <p class="label" id="h-cic-res">Results</p>
+          <div class="results">
+            <div class="metric">
+              <span class="big num">11 → 20</span
+              ><span class="what">From 11 days to 20 days</span>
+              <p>
+                Employers now have more days to get organised and to correct or
+                add a worker's salary, so they can meet their contribution
+                obligations.
+              </p>
+            </div>
+            <div class="metric">
+              <span class="big num">100%</span
+              ><span class="what">automated</span>
+              <p>
+                Employers no longer need 10 days to send their workers' salary
+                data to Social Security. Social Security organises this data and
+                calculates the amounts automatically. The employer only needs to
+                confirm the values and create the payment receipt.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" aria-labelledby="h-cic-proc" style="gap: 48px">
+          <div class="sh full">
+            <div class="stack">
+              <p class="label">Process overview</p>
+              <h2 id="h-cic-proc" class="subheading">
+                Five steps, from discovery to validation
+              </h2>
+            </div>
+          </div>
+          <div class="stages">
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-pesquisa" /></svg
+                  ></span>
+                  <p class="label">Step 1</p>
+                  <h3>Discovery research</h3>
+                </div>
+                <dl class="facts">
+                  <dt>What we did</dt>
+                  <dd>
+                    We held in-depth interviews, with interview guides and
+                    observation, with companies and with Social Security
+                    employees.
+                  </dd>
+                  <dt>Deliverables</dt>
+                  <dd>
+                    A report that explains how companies, employees and services
+                    take part in managing the contribution calculation and in
+                    creating the contribution payment receipt.
+                  </dd>
+                </dl>
+              </div>
+              <div class="two full">
+                <figure>
+                  <img
+                    class="case-img"
+                    src="../images/ciclo-pesquisa.png"
+                    width="1351"
+                    height="645"
+                    loading="lazy"
+                    alt="Board with insights and affinity groups from the interviews with employees and accountants, and their reports"
+                  />
+                  <figcaption>
+                    Sessions with employers and synthesis of the collected data
+                  </figcaption>
+                </figure>
+                <div class="learn">
+                  <p class="label">Main learnings</p>
+                  <ul>
+                    <li>
+                      <b>The Social Security employee's view</b
+                      ><span
+                        >The processes are manual and slow, because employees
+                        handle the Salary Declarations (DR) that companies send
+                        every month. One company can send 30 to 60 DR files,
+                        and some are still sent on paper. Also, fixing errors
+                        is a manual task, and it creates a dependency on these
+                        features inside Social Security.</span
+                      >
+                    </li>
+                    <li>
+                      <b>The taxpayer's view</b
+                      ><span
+                        >There is pressure on accountants, because companies
+                        prefer to give the DR work to them. This is a big
+                        responsibility when errors appear in the company's
+                        current account at Social Security. People also said
+                        they were afraid of corrections, because they need to
+                        send two files: 1 file with the salaries that were
+                        already sent, and 1 file with the correct salary data
+                        for the workers.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-sessoes" /></svg
+                  ></span>
+                  <p class="label">Step 2</p>
+                  <h3>Workshop with project stakeholders</h3>
+                </div>
+                <dl class="facts">
+                  <dt>What we did</dt>
+                  <dd>
+                    We held workshop sessions to build the solution flow and to
+                    prioritise with MoSCoW. This helped to map the steps to
+                    build the solution in the project.
+                  </dd>
+                  <dt>Deliverables</dt>
+                  <dd>
+                    A future journey for the solution and a priority map for the
+                    project roadmap.
+                  </dd>
+                </dl>
+              </div>
+              <figure>
+                <img
+                  class="case-img"
+                  src="../images/ciclo-workshop.png"
+                  width="1351"
+                  height="819"
+                  loading="lazy"
+                  alt="Workshop board with the future journey, the sticky notes area and the prioritisation with the MoSCoW method"
+                />
+                <figcaption>
+                  Future journey and step prioritisation with the MoSCoW method
+                </figcaption>
+              </figure>
+              <div class="two">
+                <div class="learn">
+                  <p class="label">Company needs</p>
+                  <ul>
+                    <li>
+                      <b>A faster and more transparent process</b
+                      ><span
+                        >A feature that organises the salaries and the
+                        calculation of the workers' contribution obligations for
+                        payment. It makes it easier to correct or validate
+                        salaries, without creating and sending duplicate files
+                        to Social Security. Companies have autonomy over changes
+                        to their workers' salaries.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="learn">
+                  <p class="label">Business needs</p>
+                  <ul>
+                    <li>
+                      <b>Automatic calculation and handling of salaries</b
+                      ><span
+                        >Salaries and contributions are calculated
+                        automatically, with the information from the workers'
+                        contracts, and with automatic salary ranges and work
+                        breaks. Salaries are validated automatically. People
+                        only handle salaries by hand in specific situations, in
+                        other words, in exception cases.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-prototipo" /></svg
+                  ></span>
+                  <p class="label">Step 3</p>
+                  <h3>Ideation and refining the solution</h3>
+                </div>
+                <dl class="facts">
+                  <dt>What we did</dt>
+                  <dd>
+                    We held ideation sessions with the project team to simplify
+                    the planned flowchart.
+                  </dd>
+                  <dt>Deliverables</dt>
+                  <dd>
+                    Prototype flows for the company profile and for the Social
+                    Security employee profile.
+                  </dd>
+                </dl>
+              </div>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-sintetizacao" /></svg
+                  ></span>
+                  <p class="label">Step 4</p>
+                  <h3>
+                    Design system, accessibility and content alignment with the
+                    usability team of Instituto de Informática
+                  </h3>
+                </div>
+                <dl class="facts">
+                  <dt>What we did</dt>
+                  <dd>
+                    We held review sessions about the design system,
+                    accessibility and content of the flow prototypes.
+                  </dd>
+                  <dt>Deliverables</dt>
+                  <dd>
+                    Content improvements, a review of how the components are
+                    used, new components, and a map of the accessibility
+                    documentation.
+                  </dd>
+                </dl>
+              </div>
+              <figure style="align-items: center">
+                <img
+                  class="case-img"
+                  src="../images/ciclo-painel.png"
+                  width="662"
+                  height="498"
+                  style="max-width: 800px"
+                  loading="lazy"
+                  alt="Contribution obligations dashboard on Segurança Social Direta, with alerts, the deadline to confirm values and the monthly calculation"
+                />
+                <figcaption>
+                  Contribution obligations dashboard, reviewed with the
+                  usability team
+                </figcaption>
+              </figure>
+            </article>
+
+            <article class="stage">
+              <div class="stage-head full">
+                <div class="stage-title">
+                  <span class="stage-icon"
+                    ><svg><use href="#i-pesquisa" /></svg
+                  ></span>
+                  <p class="label">Step 5</p>
+                  <h3>Validation research</h3>
+                </div>
+                <dl class="facts">
+                  <dt>What we did</dt>
+                  <dd>
+                    We ran usability tests for each step of the contribution
+                    calculation (confirmation, contribution obligation, value
+                    management, value communication requests and
+                    communications), from the company's point of view, to
+                    validate our solutions.
+                  </dd>
+                  <dt>Deliverables</dt>
+                  <dd>
+                    One-page reports with a map of opportunities and
+                    improvements for the solutions. They helped to prioritise
+                    the project roadmap.
+                  </dd>
+                </dl>
+              </div>
+              <figure style="align-items: center">
+                <img
+                  class="case-img"
+                  src="../images/ciclo-validacao.png"
+                  width="567"
+                  height="821"
+                  style="max-width: 567px"
+                  loading="lazy"
+                  alt="Consolidation and report board, with the synthesis of each of the six test tasks and the final notes"
+                />
+                <figcaption>
+                  Test synthesis and prioritisation of improvements
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </section>
+
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#trabalho"
+            ><svg><use href="#i-back" /></svg>Back</a
+          >
+          <a class="btn btn-ghost" href="#vinculos"
+            >Previous case study<svg><use href="#i-arrow" /></svg
+          ></a>
+        </div>
+      </main>
+
+      <!-- ============ CV ============ -->
+      <main class="page" data-page="curriculo" hidden>
+        <div class="case-nav">
+          <a class="btn btn-ghost" href="#sobre"
+            ><svg><use href="#i-back" /></svg>Back to portfolio</a
+          >
+        </div>
+
+        <div class="cv">
+          <section class="card" aria-labelledby="h-cv">
+            <p class="label">CV</p>
+            <div>
+              <h1 id="h-cv">Rayane Nunes</h1>
+              <p class="role-t">Product Designer · UX Researcher</p>
+            </div>
+            <p class="contact-line">
+              <span>Lisbon, Portugal</span><span class="num">910 561 682</span
+              ><span>rayanenlima@gmail.com</span>
+            </p>
+            <p class="summary">
+              I studied Marketing (Advertising), and I have a background in
+              graphic design and inbound marketing. When I worked with digital
+              products, I found my passion for user experience and I moved to
+              UX/UI. As a Product Designer and UX Researcher, I want to build
+              products that solve real problems and add value in a caring and
+              responsible way.
+            </p>
+          </section>
+
+          <section class="card fill" aria-labelledby="h-comp">
+            <p class="label" id="h-comp">Skills</p>
+            <div class="kv">
+              <p class="small muted">Tools</p>
+              <div class="tags">
+                <span class="tag">Figma</span><span class="tag">FigJam</span
+                ><span class="tag">Miro</span><span class="tag">Hotjar</span
+                ><span class="tag">Notion</span>
+              </div>
+            </div>
+            <div class="kv">
+              <p class="small muted">Abilities</p>
+              <div class="tags">
+                <span class="tag">Qualitative research and UXR Ops</span
+                ><span class="tag">Usability testing</span
+                ><span class="tag"
+                  >Low, medium and high fidelity prototyping</span
+                ><span class="tag">UI design</span
+                ><span class="tag">Double Diamond and Lean Inception</span
+                ><span class="tag">Design system governance</span
+                ><span class="tag">Research methodology documentation</span>
+              </div>
+            </div>
+            <div class="kv">
+              <p class="small muted">Languages</p>
+              <p>Portuguese — native<br />English — B1</p>
+            </div>
+          </section>
+
+          <section class="block" aria-labelledby="h-jor">
+            <h2 id="h-jor" class="subheading">My journey</h2>
+            <div class="jobs">
+              <article class="job">
+                <h3>UX Researcher</h3>
+                <p class="meta">
+                  Eviden · Instituto de Informática, I.P. — Jun 2026 – now ·
+                  Lisbon, Portugal
+                </p>
+                <ul>
+                  <li>Support the management and strategic vision of UXR Ops;</li>
+                  <li>
+                    Make sure that research methods and studies are well
+                    documented;
+                  </li>
+                  <li>
+                    Create and improve templates, reports and good practice
+                    documents;
+                  </li>
+                  <li>Help to organise internal knowledge sharing;</li>
+                  <li>
+                    Follow research, interviews, usability tests and workshops
+                    — planning, moderation and analysis;
+                  </li>
+                </ul>
+              </article>
+              <article class="job">
+                <h3>UI/UX Designer</h3>
+                <p class="meta">
+                  Eviden · Instituto de Informática, I.P. — Aug 2023 – Jun 2026
+                  · Lisbon, Portugal
+                </p>
+                <ul>
+                  <li>
+                    Ran research with Segurança Social Direta users to
+                    understand their needs and behaviours;
+                  </li>
+                  <li>
+                    Worked in multidisciplinary teams and shared design
+                    insights;
+                  </li>
+                  <li>
+                    Took part in the concept, prototyping and usability testing
+                    phases;
+                  </li>
+                  <li>
+                    Collected feedback from users and stakeholders all the time
+                    to improve the interfaces;
+                  </li>
+                </ul>
+              </article>
+              <article class="job">
+                <h3>Product Designer</h3>
+                <p class="meta">
+                  Boavista Tecnologia — Nov 2021 – Jul 2023 · Fortaleza, Brazil
+                </p>
+                <ul>
+                  <li>
+                    Understood product specifications and user psychology with
+                    data (Hotjar) and interviews;
+                  </li>
+                  <li>
+                    Led Double Diamond and Lean Inception from the start to the
+                    end of the delivery;
+                  </li>
+                  <li>
+                    Documented processes in Notion to help communication between
+                    squads;
+                  </li>
+                  <li>
+                    Created wireframes and medium and high fidelity prototypes,
+                    tested in Figma and in interviews;
+                  </li>
+                  <li>
+                    Took care of the design system: added new components and
+                    followed the style guide;
+                  </li>
+                </ul>
+              </article>
+              <article class="job">
+                <h3>Digital marketing analyst</h3>
+                <p class="meta">
+                  Boavista Tecnologia — Dec 2017 – Nov 2021 · Fortaleza, Brazil
+                </p>
+                <ul>
+                  <li>Analysed RD Station data to understand and convert leads;</li>
+                  <li>
+                    Built strategies and automation flows to create SDR
+                    opportunities;
+                  </li>
+                  <li>Supported the visual identity of landing pages;</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="card"
+            style="align-self: start"
+            aria-labelledby="h-form"
+          >
+            <p class="label" id="h-form">Training</p>
+            <div class="kv">
+              <h3 class="lead">Education</h3>
+              <ul class="edu-list">
+                <li>
+                  <span>MBA in UX Design and User Research</span
+                  ><span class="meta">UNIFATEC — Mar 2023 – Sep 2024</span>
+                </li>
+                <li>
+                  <span>UI/UX Designer Certificate</span
+                  ><span class="meta">EBAC — Feb 2021 – Nov 2021</span>
+                </li>
+                <li>
+                  <span>Bachelor's degree in Advertising</span
+                  ><span class="meta"
+                    >Universidade de Fortaleza — 2010 – 2014</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="kv">
+              <h3 class="lead">Certificates</h3>
+              <ul class="edu-list">
+                <li><span>NASA Space Apps — Covid-19 Challenge</span></li>
+                <li>
+                  <span
+                    >UX &amp; Design Thinking: User Experience in Business</span
+                  >
+                </li>
+                <li><span>Design Thinking</span></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <h2 class="subheading">Let's talk</h2>
+          <p class="muted">
+            Available for product design and user research projects.
+          </p>
+        </div>
+        <ul class="contacts">
+          <li>
+            <a href="mailto:rayanenlima@gmail.com">rayanenlima@gmail.com</a>
+          </li>
+          <li class="num">910 561 682</li>
+          <li>Lisbon, Portugal</li>
+        </ul>
+        <p class="copy">© 2026 Rayane Nunes · Product Designer</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/motion@12.43.0/dist/motion.js"></script>
+    <script src="../script.js"></script>
+    <script src="../animations.js"></script>
+  </body>
+</html>

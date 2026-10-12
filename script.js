@@ -77,7 +77,17 @@
     var io = new IntersectionObserver(function (entries) {
       if (current !== "home") return;
       entries.forEach(function (en) { if (en.isIntersecting) setActive(en.target.id); });
-    }, { rootMargin: "-40% 0px -55% 0px" });
+    }, { rootMargin: "-20% 0px -75% 0px" });
     HOME_SECTIONS.forEach(function (id) { var s = document.getElementById(id); if (s) io.observe(s); });
   }
+
+  // language switch opens the same page or section in the other language
+  document.querySelectorAll("[data-lang-switch]").forEach(function (a) {
+    var base = a.getAttribute("href");
+    a.addEventListener("click", function () {
+      var on = document.querySelector('[data-nav][aria-current="true"]');
+      var key = current !== "home" ? current : on && on.dataset.nav;
+      a.href = base + (key && key !== "sobre" ? "#" + key : "");
+    });
+  });
 })();
